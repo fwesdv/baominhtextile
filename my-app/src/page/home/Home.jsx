@@ -180,6 +180,7 @@ function Home(props) {
       <main className="et-main">
         {/* <!-- gioi thieu --> */}
         <section className="et-slide" id="tab-01">
+          <div className="">
           <section class="about-part1">
           <div class="container-intro">
             <div class="row flex flex-wrap flex-content-center">
@@ -329,6 +330,8 @@ function Home(props) {
                 </div>
             </div>
         </section>
+          </div>
+          
         </section>
         {/* -------San Pham--------- */}
         <section className="et-slide" id="tab-02">
@@ -380,7 +383,7 @@ function Home(props) {
           </div>
         </div>
         </section>
-          {/* -------------nha may----------- */}
+        {/* -------------nha may----------- */}
         <section className="et-slide" id="tab-03">
   <div class="container">
     <div class="listfactory">
@@ -771,42 +774,42 @@ function Home(props) {
     </div>
   </div>
         </section>
-                {/* ------------------chung chi----------------- */}
+        {/* ------------------chung chi----------------- */}
         <section className="et-slide" id="tab-04">
   
-  <div class="product-detail">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6">
-        <div className="slider-container">
-        <div className="slider">
-        <img className="slider-image" src={slides1[index1].img} alt={"#"} />
-      </div>
-        <button className="prev-button" onClick={prevSlide1}>
-            
-        </button>
-        <button className="next-button" onClick={nextSlide1}>
-           
-        </button>
+          <div class="product-detail">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div className="slider-container">
+                <div className="slider">
+                <img className="slider-image" src={slides1[index1].img} alt={"#"} />
+              </div>
+                <button className="prev-button" onClick={prevSlide1}>
+                    
+                </button>
+                <button className="next-button" onClick={nextSlide1}>
+                  
+                </button>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+              <div className="content" style={{ textAlign: 'justify', color: '#333333', backgroundColor: '#ffffff' }}>
+              <div>
+              <p className="content_cc">
+                <strong>Với phương châm đặt phát triển bền vững lên hàng đầu, Công ty Cổ phần Dệt Bảo Minh đã không ngừng cải thiện quy trình sản xuất để bảo vệ môi trường và tạo ra những sản phẩm an toàn, đồng thời thân thiện với sức khỏe của con người.&nbsp;</strong>
+              </p>
+              <p className="content_cc">&nbsp;</p>
+              <p className="content_cc">
+                <span style={{ fontStyle: 'inherit' }}>Bảo Minh đã đạt được những chứng chỉ như:&nbsp;</span>Higg Index,&nbsp;Global Recycled Standard (GRS), Organic Content Standard (OCS), Recycled Claim Standard (RCS), Global Organic Textile (GOTS), Standard 100 by Oeko-Tex®, STeP by Oeko-Tex®, Better Cotton Initiative (BCI), ISO 14001:2015, ISO 9001:2015.
+              </p>
+              <div className="content_cc"><br /></div>
+            </div>
+            </div>
+                </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-12 col-lg-6">
-      <div className="content" style={{ textAlign: 'justify', color: '#333333', backgroundColor: '#ffffff' }}>
-      <div>
-      <p className="content_cc">
-        <strong>Với phương châm đặt phát triển bền vững lên hàng đầu, Công ty Cổ phần Dệt Bảo Minh đã không ngừng cải thiện quy trình sản xuất để bảo vệ môi trường và tạo ra những sản phẩm an toàn, đồng thời thân thiện với sức khỏe của con người.&nbsp;</strong>
-      </p>
-      <p className="content_cc">&nbsp;</p>
-      <p className="content_cc">
-        <span style={{ fontStyle: 'inherit' }}>Bảo Minh đã đạt được những chứng chỉ như:&nbsp;</span>Higg Index,&nbsp;Global Recycled Standard (GRS), Organic Content Standard (OCS), Recycled Claim Standard (RCS), Global Organic Textile (GOTS), Standard 100 by Oeko-Tex®, STeP by Oeko-Tex®, Better Cotton Initiative (BCI), ISO 14001:2015, ISO 9001:2015.
-      </p>
-      <div className="content_cc"><br /></div>
-    </div>
-    </div>
-        </div>
-    </div>
-  </div>
-</div>
         </section>
       </main>    
   

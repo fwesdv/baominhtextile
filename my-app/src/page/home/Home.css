@@ -173,6 +173,10 @@ body {
   .container .flex-content-center{
     justify-content: center;
 }
+.product-detail{
+  background-color: #ffffff;
+  padding: 15px;
+}
   /* About part 3 */
   .about-part3 {
     background-color: #f5f5f5;
@@ -496,6 +500,7 @@ a {
   width: 100vh;
   height: auto;;
 }
+
 
 .et-hero-tabs{
   justify-content: center;

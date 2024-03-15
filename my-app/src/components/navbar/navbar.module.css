@@ -1,0 +1,187 @@
+*,*::after, *::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    z-index: 44;
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+
+}
+.nav_toggler div {
+    width: 2.5rem;
+    height: 0.2rem;
+    margin: 0.4rem;
+    background: #00481f;
+    transition: 0.4s ease-in;
+}
+.nav_toggler {
+    cursor: pointer;
+    display: none;
+}
+.overflow_hidden {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(51, 51, 51, 0.7);
+    z-index: 88;
+    display: block;
+}
+@media screen and (max-width: 1200px) {
+    .nav_toggler{
+        display: block;
+    }
+    .nav_menu{
+        position: fixed;
+        top:0px;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        background: rgb(255, 255, 255);
+        flex-direction: column;
+        transform:  translateX(100%);
+        transition: 0.5s ease-in;
+        padding:0 12px ;
+        z-index: 99;
+    }
+    .nav_menu li {
+        top: 0;
+        bottom: 0;
+      }
+}
+.nav_active{
+    transform: translateX(0);
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-4px, 5px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-4px,-5px);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #ffffff;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 95%;
+	margin: 0 auto;
+    height: 100%;
+}
+
+header {
+  background: #ffffff;
+  height: 100px;
+  border-bottom: 1px solid #008e3e;
+}
+header {
+    background: #ffffff;
+    height: 100px;
+    border-bottom: 1px solid #008e3e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 90px;
+  z-index: 98;
+}
+.logo img {
+    width: 80px;
+}
+
+.logo_text{
+    margin-top: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #00481f;
+    text-transform: uppercase;
+}
+.nav_menu_wrap {
+    /* position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:space-around ; */
+    float: right;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 99;
+}
+
+.nav_menu_wrap ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+}
+
+.nav_menu_wrap li {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+
+}
+
+.nav_menu_wrap ul li a {
+    display: flex;
+    align-items: center;
+    color: #00481f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 550;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.nav_menu_wrap ul li a:hover {
+  color: #00481f;
+  font-size: 1.5rem;
+  font-weight: 700;
+  transition: all ease-out 250ms;
+}
+
+.nav_menu_wrap ul li a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #00481f;
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+.nav_menu_wrap ul li a:hover::before {
+  width: 100%;
+}
